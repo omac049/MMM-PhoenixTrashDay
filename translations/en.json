@@ -1,0 +1,14 @@
+{
+  "refresh": "Update",
+  "refreshing": "Updating...",
+  "lastUpdated": "Last refresh",
+  "errorConfig": "Configuration error",
+  "errorGeocoding": "Address error",
+  "errorService": "Service unavailable",
+  "errorData": "Data issue",
+  "errorNetwork": "Connection error", 
+  "errorHttp": "Server error",
+  "errorUnknown": "Unknown error",
+  "trash": "Trash Pickup",
+  "recycle": "Recycling Pickup"
+} 
