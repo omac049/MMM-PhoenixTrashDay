@@ -1,0 +1,335 @@
+/* MMM-PhoenixTrashDay CSS - Modern & Sleek Design - Compact Version */
+
+.phoenix-trash-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;  /* Reduced from 20px */
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;   /* Reduced from 12px */
+  padding: 12px;        /* Reduced from 20px */
+  box-sizing: border-box;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Compact mode styles */
+.phoenix-trash-wrapper.compact {
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.trash-services-container {
+  display: flex;
+  flex-direction: row;  /* Changed from column to row for horizontal layout */
+  width: 100%;
+  gap: 10px;            /* Reduced from 18px */
+  flex-wrap: wrap;      /* Added to ensure responsiveness */
+}
+
+/* Compact mode styles for services container */
+.compact .trash-services-container {
+  gap: 6px;
+}
+
+.trash-pickup-container, .recycle-pickup-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;            /* Reduced from 18px */
+  padding: 8px;         /* Reduced from 12px */
+  border-radius: 6px;   /* Reduced from 8px */
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  flex: 1;              /* Added to make containers share space equally */
+  min-width: 200px;     /* Ensures containers don't get too small */
+}
+
+/* Compact mode styles for pickup containers */
+.compact .trash-pickup-container, 
+.compact .recycle-pickup-container {
+  padding: 6px;
+  gap: 6px;
+  border-radius: 4px;
+  min-width: 180px;
+}
+
+.trash-pickup-container:hover, .recycle-pickup-container:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px); /* Reduced effect from -2px */
+}
+
+.trash-icon, .recycle-icon {
+  font-size: 1.8em;     /* Reduced from 2.2em */
+  min-width: 35px;      /* Reduced from 45px */
+  height: 35px;         /* Reduced from 45px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Compact mode styles for icons */
+.compact .trash-icon, 
+.compact .recycle-icon {
+  font-size: 1.5em;
+  min-width: 30px;
+  height: 30px;
+  box-shadow: none;
+}
+
+/* Icon Color Styles */
+.trash-icon {
+  color: #e5e5e5;
+}
+
+.recycle-icon {
+  color: #4ade80;
+}
+
+/* Monochrome Icon Style */
+.trash-icon.monochrome, .recycle-icon.monochrome {
+  color: #ffffff;
+}
+
+/* Icon Set Specific Styles */
+/* Simple icons */
+.simple .trash-icon, .simple .recycle-icon {
+  font-size: 1.6em;     /* Reduced from 2em */
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Compact + Simple icons */
+.compact.simple .trash-icon, 
+.compact.simple .recycle-icon {
+  font-size: 1.4em;
+}
+
+/* Colorful icons */
+.colorful .trash-icon {
+  color: #ff7043;
+  background-color: rgba(255, 112, 67, 0.1);
+}
+
+.colorful .recycle-icon {
+  color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Outline icons */
+.outline .trash-icon, .outline .recycle-icon {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid currentColor; /* Reduced from 2px */
+}
+
+.outline .trash-icon {
+  color: #e0e0e0;
+}
+
+.outline .recycle-icon {
+  color: #4ade80;
+}
+
+/* Custom icon styles */
+.custom-trash-icon, .custom-recycle-icon {
+  width: 25px;          /* Reduced from 30px */
+  height: 25px;         /* Reduced from 30px */
+  object-fit: contain;
+}
+
+/* Compact mode custom icons */
+.compact .custom-trash-icon, 
+.compact .custom-recycle-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.trash-info, .recycle-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.trash-service-label, .recycle-service-label {
+  font-size: 0.7em;     /* Reduced from 0.8em */
+  text-transform: uppercase;
+  letter-spacing: 1px;  /* Reduced from 1.5px */
+  opacity: 0.7;
+  margin-bottom: 4px;   /* Reduced from 6px */
+  font-weight: 300;
+}
+
+/* Compact mode service labels */
+.compact .trash-service-label, 
+.compact .recycle-service-label {
+  font-size: 0.65em;
+  letter-spacing: 0.8px;
+  margin-bottom: 2px;
+}
+
+.recycle-service-label {
+  color: #4ade80;
+}
+
+.trash-day-date, .recycle-day-date {
+  font-size: 0.95em;    /* Reduced from 1.1em */
+  letter-spacing: 0.3px; /* Reduced from 0.5px */
+  line-height: 1.3;      /* Reduced from 1.4 */
+}
+
+/* Compact mode day/date */
+.compact .trash-day-date, 
+.compact .recycle-day-date {
+  font-size: 0.85em;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+}
+
+.trash-day, .recycle-day {
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Compact mode removes text shadow */
+.compact .trash-day, 
+.compact .recycle-day {
+  text-shadow: none;
+}
+
+.trash-date, .recycle-date {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.trash-address {
+  font-size: 0.8em;     /* Reduced from 0.9em */
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;     /* Reduced from 15px */
+  margin-bottom: 5px;   /* Reduced from 8px */
+  font-style: italic;
+  padding-left: 5px;    /* Reduced from 6px */
+  border-left: 2px solid rgba(255, 255, 255, 0.1); /* Reduced from 3px */
+}
+
+/* Compact mode address */
+.compact .trash-address {
+  font-size: 0.75em;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  padding-left: 4px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trash-timestamp {
+  font-size: 0.7em;     /* Reduced from 0.75em */
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 8px;      /* Reduced from 14px */
+  text-align: right;
+  font-weight: 300;
+}
+
+/* Compact mode timestamp */
+.compact .trash-timestamp {
+  font-size: 0.65em;
+  margin-top: 5px;
+}
+
+.trash-stale-notice {
+  font-size: 0.75em;    /* Reduced from 0.8em */
+  color: #fbbf24;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;      /* Reduced from 12px */
+  padding: 6px 8px;     /* Reduced from 8px 12px */
+  border-radius: 4px;   /* Reduced from 6px */
+  background-color: rgba(251, 191, 36, 0.1);
+}
+
+/* Compact mode stale notice */
+.compact .trash-stale-notice {
+  font-size: 0.7em;
+  margin-top: 5px;
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+
+.trash-stale-notice i {
+  margin-right: 6px;    /* Reduced from 10px */
+}
+
+/* Compact mode stale notice icon */
+.compact .trash-stale-notice i {
+  margin-right: 4px;
+}
+
+/* Error display */
+.trash-error {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  color: #f87171;
+  padding: 10px;        /* Reduced from 15px */
+  border-radius: 6px;   /* Reduced from 8px */
+  background-color: rgba(248, 113, 113, 0.1);
+}
+
+.trash-error-icon {
+  margin-right: 10px;   /* Reduced from 15px */
+  font-size: 1.4em;     /* Reduced from 1.6em */
+  color: #f87171;
+}
+
+.trash-error-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.trash-error-type {
+  font-weight: 600;
+  margin-bottom: 4px;   /* Reduced from 6px */
+  font-size: 1em;       /* Reduced from 1.1em */
+}
+
+.trash-error-details {
+  font-size: 0.85em;    /* Reduced from 0.9em */
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.3;     /* Reduced from 1.4 */
+}
+
+/* Refresh button */
+.trash-refresh-button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ddd;
+  padding: 4px 8px;     /* Reduced from 5px 10px */
+  border-radius: 3px;
+  font-size: 0.75em;    /* Reduced from 0.8em */
+  cursor: pointer;
+  margin-top: 8px;      /* Reduced from 10px */
+  transition: background 0.3s;
+  align-self: flex-start;
+}
+
+.trash-refresh-button:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.trash-refresh-button:active {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.trash-refresh-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.trash-refresh-button i {
+  margin-right: 4px;    /* Reduced from 5px */
+} 
