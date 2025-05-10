@@ -48,7 +48,12 @@ cd MMM-PhoenixTrashDay
 npm install
 ```
 
-### 3. Configure the module
+### 3. Update the module
+```bash
+npm update
+```
+
+### 4. Configure the module
 Add the module to your `config/config.js` file:
 
 ```javascript
@@ -62,7 +67,7 @@ Add the module to your `config/config.js` file:
 }
 ```
 
-### 4. Restart MagicMirror²
+### 5. Restart MagicMirror²
 ```bash
 pm2 restart MagicMirror  // If using pm2
 ```
