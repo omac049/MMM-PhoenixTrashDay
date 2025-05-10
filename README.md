@@ -96,7 +96,7 @@ or restart your MagicMirror² manually.
   module: "MMM-PhoenixTrashDay",
   position: "top_left",
   config: {
-    address: "4027 W. Brill St, Phoenix, AZ"
+    address: "123 Main St, Phoenix, AZ"
   }
 }
 ```
@@ -107,7 +107,7 @@ or restart your MagicMirror² manually.
   module: "MMM-PhoenixTrashDay",
   position: "top_left",
   config: {
-    address: "4027 W. Brill St, Phoenix, AZ",
+    address: "123 Main St, Phoenix, AZ",
     iconLibrary: "fontawesome", 
     iconSet: "default"
   }
@@ -120,7 +120,7 @@ or restart your MagicMirror² manually.
   module: "MMM-PhoenixTrashDay",
   position: "top_left",
   config: {
-    address: "4027 W. Brill St, Phoenix, AZ",
+    address: "123 Main St, Phoenix, AZ",
     iconLibrary: "material",
     iconSet: "colorful"
   }
@@ -133,7 +133,7 @@ or restart your MagicMirror² manually.
   module: "MMM-PhoenixTrashDay",
   position: "top_left",
   config: {
-    address: "4027 W. Brill St, Phoenix, AZ",
+    address: "123 Main St, Phoenix, AZ",
     iconLibrary: "custom",
     customIconPath: "/modules/MMM-PhoenixTrashDay/icons/",
     customIcons: {
@@ -150,7 +150,7 @@ or restart your MagicMirror² manually.
   module: "MMM-PhoenixTrashDay",
   position: "top_left",
   config: {
-    address: "4027 W. Brill St, Phoenix, AZ",
+    address: "123 Main St, Phoenix, AZ",
     iconLibrary: "fontawesome",
     iconSet: "outline",
     iconColorStyle: "monochrome"
@@ -164,7 +164,7 @@ or restart your MagicMirror² manually.
   module: "MMM-PhoenixTrashDay",
   position: "top_left",
   config: {
-    address: "4027 W. Brill St, Phoenix, AZ",
+    address: "123 Main St, Phoenix, AZ",
     useDynamicsPortal: true
   }
 }
@@ -184,7 +184,7 @@ The newer City of Phoenix Dynamics 365 Portal is the recommended data source as 
 
 ```javascript
 config: {
-  address: "4027 W. Brill St, Phoenix, AZ",
+  address: "123 Main St, Phoenix, AZ",
   useDynamicsPortal: true
 }
 ```
@@ -204,7 +204,7 @@ If you encounter issues with the module not displaying your trash day:
 ### 1. Enable Debug Mode
 ```javascript
 config: {
-  address: "4027 W. Brill St, Phoenix, AZ",
+  address: "123 Main St, Phoenix, AZ",
   debug: true
 }
 ```
