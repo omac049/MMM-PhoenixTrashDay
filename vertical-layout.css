@@ -1,0 +1,8 @@
+/* Vertical layout styles for MMM-PhoenixTrashDay */
+
+/* Media query for vertical/narrow screens */
+@media screen and (max-width: 400px), screen and (orientation: portrait) {
+  .trash-services-container {
+    flex-direction: column !important;  /* Stack containers vertically */
+  }
+}

@@ -202,7 +202,7 @@ Module.register("MMM-PhoenixTrashDay", {
     },
   
     getStyles: function() {
-      const styles = ["MMM-PhoenixTrashDay.css"];
+      const styles = ["vertical-layout.css", "MMM-PhoenixTrashDay.css"];
       
       // Add icon library CSS based on configuration
       switch (this.config.iconLibrary) {
